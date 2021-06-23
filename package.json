@@ -1,0 +1,27 @@
+{
+  "name": "meet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "concurrently 'npm run test --prefix server/' 'npm run test2 --prefix test_app/'",
+    "npm_i": "concurrently 'npm i --prefix server/' 'npm i --prefix test_app/'",
+    "build": "npm run build --prefix test_app/",
+    "start": "concurrently 'npm run start --prefix server/' 'npm run start --prefix test_app/'",
+    "runserver": "npm run build && npm run runserver --prefix server/",
+    "deploy": "npm i && npm run npm_i && npm run build && npm run runserver --prefix server/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://terralogic2019@bitbucket.org/terralogic2019/meet.git"
+  },
+  "author": "Guruprasad BR",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/terralogic2019/meet#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "dependencies": {
+    "pm2": "^4.4.0"
+  }
+}

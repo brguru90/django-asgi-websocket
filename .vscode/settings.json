@@ -1,0 +1,16 @@
+{
+  "eslint.enable": true,
+  "eslint.workingDirectories": [
+    { "directory": "./server", "changeProcessCWD": true },
+    { "directory": "./test_app", "changeProcessCWD": true },
+    { "directory": "./client", "changeProcessCWD": true }
+  ],
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.acceptSuggestionOnEnter": "off"
+  },
+  "editor.formatOnSave": true,
+  "git.terminalAuthentication": false,
+  "python.pythonPath": "/bin/python3"
+}
