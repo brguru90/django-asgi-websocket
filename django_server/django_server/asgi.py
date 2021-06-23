@@ -17,9 +17,7 @@ from django.conf.urls import url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
-
 from ws import urls
-
 
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_server.settings')
